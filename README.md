@@ -24,8 +24,7 @@
 
 Repetier-Host:
 
-* [Repetier-Host pro Windows/Linux](http://www.repetier.com/download/)
-* [Repetier-Host pro Mac](http://www.repetier.com/download/)
+* [Repetier-Host pro Windows/Linux/Mac](https://www.repetier.com/download-now/)
 
 Pronterface:
 
