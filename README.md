@@ -4,9 +4,9 @@
 
 * Elektronika: [RUMBA](http://reprap.org/wiki/RUMBA)
 * Drivery: DRV8825 (microstepping 1/32)
-* Heatbed: ano
+* Heatbed: ano (svorkovnice HB-OUT)
 * Ventilátor na chlazení objektů: ano, 2x (svorkovnice FAN0, FAN1)
-* Hotend: 2x RebelMOD v3.0 (svorkovnice HE0, HE2)
+* Hotend: 2x RebelMOD v3.0 (svorkovnice HE0, HE1)
 * Řemeničky: GT2/20
 * Závitové tyče: M5
 * Motory: X,Y,Z (SX17-1003), E (SX17-1005)
