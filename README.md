@@ -1,13 +1,14 @@
-# Vzorový firmware Repetier pro 3D tiskárnu RebeliX 
+# Vzorový firmware Repetier pro 3D tiskárnu RebeliX s elektronikou RUMBA
 
 ## Vzorová konfigurace
 
-* Elektronika: Arduino Mega 2560 + RAMPS 1.4
+* Elektronika: [RUMBA](http://reprap.org/wiki/RUMBA)
 * Drivery: DRV8825 (microstepping 1/32)
-* Heatbed (svorkovnice D10)
-* Ventilátor na chlazení objektů (svorkovnice D9)
-* Hotend: RebelMOD v3.0 (svorkovnice D8)
+* Heatbed: ano
+* Ventilátor na chlazení objektů: ano, 2x (svorkovnice FAN0, FAN1)
+* Hotend: 2x RebelMOD v3.0 (svorkovnice HE0, HE2)
 * Řemeničky: GT2/20
+* Závitové tyče: M5
 * Motory: X,Y,Z (SX17-1003), E (SX17-1005)
 * Termistory: 100k NTC, Beta = 3950
 * LCD: RepRapDiscount Full Graphic Smart Controller 128x64
@@ -18,9 +19,13 @@
 
 ## Zapojení elektroniky
 
-[Návod](http://reprap4u.cz/navod-na-stavbu-3d-tiskarny-rebelix/)
+![alt tag](http://reprap.org/mediawiki/images/1/17/Rumba4.jpg)
 
 ## Ovládání tiskárny
+
+AstroPrint
+
+* [Ovládání tiskárny přes WiFi či ethernet vč. záznamu tisku za pomoci Raspberry Pi](https://www.astroprint.com/)
 
 Repetier-Host:
 
