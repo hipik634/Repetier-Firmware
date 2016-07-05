@@ -36,15 +36,13 @@
 
 */
 
-#define NUM_EXTRUDER 1
-#define MOTHERBOARD 33
+#define NUM_EXTRUDER 2
+#define MOTHERBOARD 80
 #include "pins.h"
 
 // ################## EDIT THESE SETTINGS MANUALLY ################
 // ################ END MANUAL SETTINGS ##########################
 
-#undef FAN_PIN
-#define FAN_PIN 9
 #undef FAN_BOARD_PIN
 #define FAN_BOARD_PIN -1
 #define BOARD_FAN_SPEED 255
@@ -118,6 +116,46 @@
 #define EXT0_DECOUPLE_TEST_PERIOD 12000
 #define EXT0_JAM_PIN -1
 #define EXT0_JAM_PULLUP 0
+#define EXT1_X_OFFSET 0
+#define EXT1_Y_OFFSET 0
+#define EXT1_Z_OFFSET 0
+#define EXT1_STEPS_PER_MM 850
+#define EXT1_TEMPSENSOR_TYPE 14
+#define EXT1_TEMPSENSOR_PIN TEMP_2_PIN
+#define EXT1_HEATER_PIN HEATER_2_PIN
+#define EXT1_STEP_PIN ORIG_E1_STEP_PIN
+#define EXT1_DIR_PIN ORIG_E1_DIR_PIN
+#define EXT1_INVERSE 1
+#define EXT1_ENABLE_PIN ORIG_E1_ENABLE_PIN
+#define EXT1_ENABLE_ON 0
+#define EXT1_MIRROR_STEPPER 0
+#define EXT1_STEP2_PIN ORIG_E1_STEP_PIN
+#define EXT1_DIR2_PIN ORIG_E1_DIR_PIN
+#define EXT1_INVERSE2 0
+#define EXT1_ENABLE2_PIN ORIG_E1_ENABLE_PIN
+#define EXT1_MAX_FEEDRATE 50
+#define EXT1_MAX_START_FEEDRATE 20
+#define EXT1_MAX_ACCELERATION 1000
+#define EXT1_HEAT_MANAGER 3
+#define EXT1_WATCHPERIOD 1
+#define EXT1_PID_INTEGRAL_DRIVE_MAX 190
+#define EXT1_PID_INTEGRAL_DRIVE_MIN 40
+#define EXT1_PID_PGAIN_OR_DEAD_TIME 4.9
+#define EXT1_PID_I 2
+#define EXT1_PID_D 40
+#define EXT1_PID_MAX 255
+#define EXT1_ADVANCE_K 0
+#define EXT1_ADVANCE_L 0
+#define EXT1_ADVANCE_BACKLASH_STEPS 0
+#define EXT1_WAIT_RETRACT_TEMP 150
+#define EXT1_WAIT_RETRACT_UNITS 0
+#define EXT1_SELECT_COMMANDS ""
+#define EXT1_DESELECT_COMMANDS ""
+#define EXT1_EXTRUDER_COOLER_PIN -1
+#define EXT1_EXTRUDER_COOLER_SPEED 255
+#define EXT1_DECOUPLE_TEST_PERIOD 12000
+#define EXT1_JAM_PIN -1
+#define EXT1_JAM_PULLUP 0
 
 #define FEATURE_RETRACTION 1
 #define AUTORETRACT_ENABLED 0
@@ -378,7 +416,7 @@ It also can add a delay to wait for spindle to run on full speed.
 
 // ################# Misc. settings ##################
 
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 #define ENABLE_POWER_ON_STARTUP 0
 #define POWER_INVERTING 0
 #define KILL_METHOD 1
@@ -408,7 +446,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define UI_SERVO_CONTROL 0
 #define FAN_KICKSTART_TIME  200
 
-        #define FEATURE_WATCHDOG 0
+        #define FEATURE_WATCHDOG 1
 
 // #################### Z-Probing #####################
 
@@ -470,7 +508,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_MEMORY_POSITION 1
 #define FEATURE_CHECKSUM_FORCED 0
 #define FEATURE_FAN_CONTROL 1
-#define FEATURE_FAN2_CONTROL 0
+#define FEATURE_FAN2_CONTROL 1
 #define FEATURE_CONTROLLER 11
 #define ADC_KEYPAD_PIN -1
 #define LANGUAGE_EN_ACTIVE 0
@@ -485,8 +523,8 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_CZ_ACTIVE 1
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "RebeliX X2"
-#define UI_PRINTER_COMPANY "RebeliX.cz"
+#define UI_PRINTER_NAME "RebeliX X2 Dual"
+#define UI_PRINTER_COMPANY "pichrt.info"
 #define UI_PAGES_DURATION 4000
 #define UI_ANIMATION 1
 #define UI_SPEEDDEPENDENT_POSITIONING 0
@@ -536,7 +574,7 @@ Values must be in range 1..255
 {
     "editMode": 2,
     "processor": 0,
-    "baudrate": 115200,
+    "baudrate": 250000,
     "bluetoothSerial": -1,
     "bluetoothBaudrate": 115200,
     "xStepsPerMM": 160,
@@ -602,6 +640,59 @@ Values must be in range 1..255
                 "dir": "ORIG_E0_DIR_PIN",
                 "enable": "ORIG_E0_ENABLE_PIN"
             }
+        },
+        {
+            "id": 1,
+            "heatManager": 3,
+            "pidDriveMin": 40,
+            "pidDriveMax": 190,
+            "pidMax": 255,
+            "sensorType": 14,
+            "sensorPin": "TEMP_2_PIN",
+            "heaterPin": "HEATER_2_PIN",
+            "maxFeedrate": 50,
+            "startFeedrate": 20,
+            "invert": "1",
+            "invertEnable": "0",
+            "acceleration": 1000,
+            "watchPeriod": 1,
+            "pidP": 4.9,
+            "pidI": 2,
+            "pidD": 40,
+            "advanceK": 0,
+            "advanceL": 0,
+            "waitRetractTemp": 150,
+            "waitRetractUnits": 0,
+            "waitRetract": 0,
+            "stepsPerMM": 850,
+            "coolerPin": -1,
+            "coolerSpeed": 255,
+            "selectCommands": "",
+            "deselectCommands": "",
+            "xOffset": 0,
+            "yOffset": 0,
+            "zOffset": 0,
+            "xOffsetSteps": 0,
+            "yOffsetSteps": 0,
+            "zOffsetSteps": 0,
+            "stepper": {
+                "name": "Extruder 1",
+                "step": "ORIG_E1_STEP_PIN",
+                "dir": "ORIG_E1_DIR_PIN",
+                "enable": "ORIG_E1_ENABLE_PIN"
+            },
+            "advanceBacklashSteps": 0,
+            "decoupleTestPeriod": 12,
+            "jamPin": -1,
+            "jamPullup": "0",
+            "mirror": "0",
+            "invert2": "0",
+            "stepper2": {
+                "name": "Extruder 1",
+                "step": "ORIG_E1_STEP_PIN",
+                "dir": "ORIG_E1_DIR_PIN",
+                "enable": "ORIG_E1_ENABLE_PIN"
+            }
         }
     ],
     "uiLanguage": 8,
@@ -612,7 +703,7 @@ Values must be in range 1..255
     "xMaxEndstop": 0,
     "yMaxEndstop": 0,
     "zMaxEndstop": 0,
-    "motherboard": 33,
+    "motherboard": 80,
     "driveSystem": 0,
     "xMaxSpeed": 200,
     "xHomingSpeed": 50,
@@ -738,14 +829,14 @@ Values must be in range 1..255
     "servo1Pin": -1,
     "servo2Pin": -1,
     "servo3Pin": -1,
-    "featureWatchdog": "0",
+    "featureWatchdog": "1",
     "hasHeatedBed": "1",
     "enableZProbing": "0",
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_XYZ",
     "featureController": 11,
-    "uiPrinterName": "RebeliX X2",
-    "uiPrinterCompany": "RebeliX.cz",
+    "uiPrinterName": "RebeliX X2 Dual",
+    "uiPrinterCompany": "pichrt.info",
     "uiPagesDuration": 4000,
     "uiAnimation": "1",
     "uiDisablePageswitch": "1",
@@ -993,8 +1084,8 @@ Values must be in range 1..255
     "forceChecksum": "0",
     "sdExtendedDir": "1",
     "featureFanControl": "1",
-    "fanPin": 9,
-    "featureFan2Control": "0",
+    "fanPin": "ORIG_FAN_PIN",
+    "featureFan2Control": "1",
     "fan2Pin": "ORIG_FAN2_PIN",
     "fanThermoPin": -1,
     "fanThermoMinPWM": 128,
@@ -1237,7 +1328,7 @@ Values must be in range 1..255
     "hasUser0": false,
     "hasUser1": false,
     "hasUser2": false,
-    "numExtruder": 1,
+    "numExtruder": 2,
     "version": 92.9,
     "primaryPortName": ""
 }
