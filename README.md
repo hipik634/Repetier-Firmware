@@ -1,4 +1,4 @@
-# Vzorový firmware Repetier pro 3D tiskárnu RebeliX s elektronikou RUMBA
+# Vzorový firmware Repetier pro 3D tiskárnu RebeliX s elektronikou RUMBA a dvěma extrudéry
 
 ## Vzorová konfigurace
 
