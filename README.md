@@ -12,6 +12,7 @@
 * Motory: X,Y,Z (SX17-1003), E (SX17-1005)
 * Termistory: 100k NTC, Beta = 3950
 * LCD: RepRapDiscount Full Graphic Smart Controller 128x64
+* LED osvětlení: ano (svorkovnice HE2)
 * EEPROM: Povolena
 * Teplota hotendu: MAX 248°C (omezení kvůli teflonové vložce heatbreaku)
 
