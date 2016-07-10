@@ -523,7 +523,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_CZ_ACTIVE 1
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "RebeliX X2 Dual"
+#define UI_PRINTER_NAME "RepRap"
 #define UI_PRINTER_COMPANY "pichrt.info"
 #define UI_PAGES_DURATION 4000
 #define UI_ANIMATION 1
@@ -538,7 +538,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define UI_KEY_REDUCE_REPEAT 50
 #define UI_KEY_MIN_REPEAT 50
 #define FEATURE_BEEPER 0
-#define CASE_LIGHTS_PIN -1
+#define CASE_LIGHTS_PIN HEATER_3_PIN
 #define CASE_LIGHT_DEFAULT_ON 0
 #define UI_START_SCREEN_DELAY 1000
 #define UI_DYNAMIC_ENCODER_SPEED 1
@@ -835,7 +835,7 @@ Values must be in range 1..255
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_XYZ",
     "featureController": 11,
-    "uiPrinterName": "RebeliX X2 Dual",
+    "uiPrinterName": "RepRap",
     "uiPrinterCompany": "pichrt.info",
     "uiPagesDuration": 4000,
     "uiAnimation": "1",
@@ -873,7 +873,7 @@ Values must be in range 1..255
     "bedPidD": 530.16,
     "bedPidMax": 255,
     "bedDecoupleTestPeriod": 300,
-    "caseLightPin": -1,
+    "caseLightPin": "HEATER_3_PIN",
     "caseLightDefaultOn": "0",
     "bedSkipIfWithin": 3,
     "gen1T0": 25,
