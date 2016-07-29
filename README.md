@@ -9,7 +9,7 @@
 * Hotend: 2x RebelMOD v3.0 (svorkovnice HE0, HE1)
 * Řemeničky: GT2/20
 * Závitové tyče: M5
-* Motory: X,Y,Z (SX17-1003), E (SX17-1005)
+* Motory: X,Y,Z (SX17-1003), E (SX17-1005), druhý motor osy Z připojte na driver extruderu 2!
 * Termistory: 100k NTC, Beta = 3950
 * LCD: RepRapDiscount Full Graphic Smart Controller 128x64
 * LED osvětlení: ano (svorkovnice HE2)
