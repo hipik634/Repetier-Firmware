@@ -401,10 +401,10 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Y2_STEP_PIN   ORIG_E1_STEP_PIN
 #define Y2_DIR_PIN    ORIG_E1_DIR_PIN
 #define Y2_ENABLE_PIN ORIG_E1_ENABLE_PIN
-#define FEATURE_TWO_ZSTEPPER 0
-#define Z2_STEP_PIN   ORIG_E1_STEP_PIN
-#define Z2_DIR_PIN    ORIG_E1_DIR_PIN
-#define Z2_ENABLE_PIN ORIG_E1_ENABLE_PIN
+#define FEATURE_TWO_ZSTEPPER 1
+#define Z2_STEP_PIN   ORIG_E2_STEP_PIN
+#define Z2_DIR_PIN    ORIG_E2_DIR_PIN
+#define Z2_ENABLE_PIN ORIG_E2_ENABLE_PIN
 #define FEATURE_THREE_ZSTEPPER 0
 #define Z3_STEP_PIN   ORIG_E2_STEP_PIN
 #define Z3_DIR_PIN    ORIG_E2_DIR_PIN
@@ -809,12 +809,12 @@ Values must be in range 1..255
         "dir": "ORIG_E1_DIR_PIN",
         "enable": "ORIG_E1_ENABLE_PIN"
     },
-    "mirrorZ": 0,
+    "mirrorZ": "1",
     "mirrorZMotor": {
-        "name": "Extruder 1",
-        "step": "ORIG_E1_STEP_PIN",
-        "dir": "ORIG_E1_DIR_PIN",
-        "enable": "ORIG_E1_ENABLE_PIN"
+        "name": "Extruder 2",
+        "step": "ORIG_E2_STEP_PIN",
+        "dir": "ORIG_E2_DIR_PIN",
+        "enable": "ORIG_E2_ENABLE_PIN"
     },
     "mirrorZ3": "0",
     "mirrorZ3Motor": {
