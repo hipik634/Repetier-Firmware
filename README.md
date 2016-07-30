@@ -3,7 +3,7 @@
 ## Vzorová konfigurace
 
 * Elektronika: [RUMBA](http://reprap.org/wiki/RUMBA)
-* Drivery: DRV8825 (microstepping 1/32)
+* Drivery: 6x DRV8825 (microstepping 1/32)
 * Heatbed: ano (svorkovnice HB-OUT)
 * Ventilátor na chlazení objektů: ano, 2x (svorkovnice FAN0, FAN1)
 * Hotend: 2x RebelMOD v3.0 (svorkovnice HE0, HE1)
@@ -19,6 +19,8 @@
 Úpravy ve firmware dělejte přes konfigurátor [http://www.repetier.com/firmware/v092](http://www.repetier.com/firmware/v092).
 
 ## Zapojení elektroniky
+
+Prozatím generické schéma zapojení, časem přidám konkrétní zapojení.
 
 ![alt tag](http://reprap.org/mediawiki/images/1/17/Rumba4.jpg)
 
