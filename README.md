@@ -26,7 +26,7 @@ Prozatím generické schéma zapojení, časem přidám konkrétní zapojení.
 
 ## Ovládání tiskárny přes WiFi či ethernet vč. záznamu tisku za pomoci Raspberry Pi
 
-Repetier Server má oproti AstroPrint více možnosti konfigurace tiskárny vč. např. nahrávání formwaru, editace EEPROM atp.)
+Repetier Server má oproti AstroPrint více možnosti konfigurace tiskárny vč. např. nahrávání firmwaru, editace EEPROM atp.)
 
 * [Repetier Server](https://www.repetier-server.com/download-repetier-server/)
 * [AstroPrint](https://www.astroprint.com/)
@@ -35,3 +35,10 @@ Repetier Server má oproti AstroPrint více možnosti konfigurace tiskárny vč.
 ## Ovládání tiskárny z PC přes USB
 
 * [Repetier-Host pro Windows / Linux / Mac](https://www.repetier.com/download-now/)
+
+## Slicer
+
+Osobně používám placený Simplify3D, který je na špičce pomyslného žebříčku slicerů.
+
+* [Simplify3D - placený](https://www.simplify3d.com/)
+* [Slic3r - zdarma](http://slic3r.org/)
