@@ -24,17 +24,14 @@ Prozatím generické schéma zapojení, časem přidám konkrétní zapojení.
 
 ![alt tag](http://reprap.org/mediawiki/images/1/17/Rumba4.jpg)
 
-## Ovládání tiskárny
+## Ovládání tiskárny přes WiFi či ethernet vč. záznamu tisku za pomoci Raspberry Pi
 
-AstroPrint
+Repetier Server má oproti AstroPrint více možnosti konfigurace tiskárny vč. např. nahrávání formwaru, editace EEPROM atp.)
 
-* [Ovládání tiskárny přes WiFi či ethernet vč. záznamu tisku za pomoci Raspberry Pi](https://www.astroprint.com/)
+* [Repetier Server](https://www.repetier-server.com/download-repetier-server/)
+* [AstroPrint](https://www.astroprint.com/)
+* [OctoPrint](http://octoprint.org/)
 
-Repetier-Host:
+## Ovládání tiskárny z PC přes USB
 
-* [Repetier-Host pro Windows/Linux/Mac](https://www.repetier.com/download-now/)
-
-Pronterface:
-
-* [Pronterface pro Windows/Mac] (http://koti.kapsi.fi/~kliment/printrun/)
-* [Pronterface pro Linux] (http://reprap.org/wiki/Printrun)
+* [Repetier-Host pro Windows / Linux / Mac](https://www.repetier.com/download-now/)
