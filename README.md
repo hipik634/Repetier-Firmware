@@ -13,7 +13,7 @@
 * Termistory: 100k NTC, Beta = 3950
 * LCD: RepRapDiscount Full Graphic Smart Controller 128x64
 * LED osvětlení: ano (svorkovnice HE2)
-* EEPROM: Povolena
+* EEPROM: povolena (nezapomeňte po instalaci firmwaru data z EEPROM načíst)
 * Teplota hotendu: MAX 248°C (omezení kvůli teflonové vložce heatbreaku)
 
 Úpravy ve firmware dělejte přes konfigurátor [http://www.repetier.com/firmware/v092](http://www.repetier.com/firmware/v092).
