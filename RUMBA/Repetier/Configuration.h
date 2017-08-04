@@ -65,7 +65,7 @@
 #define DRIVE_SYSTEM 0
 #define XAXIS_STEPS_PER_MM 160
 #define YAXIS_STEPS_PER_MM 160
-#define ZAXIS_STEPS_PER_MM 8000
+#define ZAXIS_STEPS_PER_MM 800
 #define EXTRUDER_FAN_COOL_TEMP 50
 #define PDM_FOR_EXTRUDER 0
 #define PDM_FOR_COOLER 0
@@ -116,7 +116,8 @@
 #define EXT0_DECOUPLE_TEST_PERIOD 12000
 #define EXT0_JAM_PIN -1
 #define EXT0_JAM_PULLUP 0
-#define EXT1_X_OFFSET 0
+
+#define EXT1_X_OFFSET 20
 #define EXT1_Y_OFFSET 0
 #define EXT1_Z_OFFSET 0
 #define EXT1_STEPS_PER_MM 850
@@ -156,7 +157,7 @@
 #define EXT1_DECOUPLE_TEST_PERIOD 12000
 #define EXT1_JAM_PIN -1
 #define EXT1_JAM_PULLUP 0
-
+ 
 #define FEATURE_RETRACTION 1
 #define AUTORETRACT_ENABLED 0
 #define RETRACTION_LENGTH 3
@@ -213,9 +214,9 @@
 #define HEATED_BED_PID_MAX 255
 #define HEATED_BED_DECOUPLE_TEST_PERIOD 300000
 #define MIN_EXTRUDER_TEMP 150
-#define MAXTEMP 248
+#define MAXTEMP 260
 #define MIN_DEFECT_TEMPERATURE -10
-#define MAX_DEFECT_TEMPERATURE 255
+#define MAX_DEFECT_TEMPERATURE 265
 
 // ##########################################################################################
 // ##                             Laser configuration                                      ##
@@ -269,7 +270,7 @@ It also can add a delay to wait for spindle to run on full speed.
 // ################ Endstop configuration #####################
 
 #define ENDSTOP_PULLUP_X_MIN true
-#define ENDSTOP_X_MIN_INVERTING false
+#define ENDSTOP_X_MIN_INVERTING true
 #define MIN_HARDWARE_ENDSTOP_X true
 #define ENDSTOP_PULLUP_Y_MIN true
 #define ENDSTOP_Y_MIN_INVERTING false
@@ -320,9 +321,9 @@ It also can add a delay to wait for spindle to run on full speed.
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
-#define X_MAX_LENGTH 195
-#define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 185
+#define X_MAX_LENGTH 190
+#define Y_MAX_LENGTH 190
+#define Z_MAX_LENGTH 285
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -358,7 +359,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define MAX_INACTIVE_TIME 0L
 #define MAX_FEEDRATE_X 200
 #define MAX_FEEDRATE_Y 200
-#define MAX_FEEDRATE_Z 3
+#define MAX_FEEDRATE_Z 1000
 #define HOMING_FEEDRATE_X 50
 #define HOMING_FEEDRATE_Y 50
 #define HOMING_FEEDRATE_Z 3
@@ -380,10 +381,10 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DOUBLE_STEP_DELAY 1 // time in microseconds
 #define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 1000
 #define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 1000
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 100
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 500 //acc
 #define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_X 1000
 #define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Y 1000
-#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Z 100
+#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Z 500 //acc
 #define INTERPOLATE_ACCELERATION_WITH_Z 0
 #define ACCELERATION_FACTOR_TOP 100
 #define MAX_JERK 30
@@ -471,10 +472,10 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_REQUIRES_HEATING 0
 #define Z_PROBE_MIN_TEMPERATURE 150
 #define FEATURE_AUTOLEVEL 1
-#define Z_PROBE_X1 20
-#define Z_PROBE_Y1 20
+#define Z_PROBE_X1 30
+#define Z_PROBE_Y1 30
 #define Z_PROBE_X2 160
-#define Z_PROBE_Y2 20
+#define Z_PROBE_Y2 30
 #define Z_PROBE_X3 100
 #define Z_PROBE_Y3 160
 #define BED_LEVELING_METHOD 0
@@ -511,7 +512,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_FAN2_CONTROL 1
 #define FEATURE_CONTROLLER 11
 #define ADC_KEYPAD_PIN -1
-#define LANGUAGE_EN_ACTIVE 0
+#define LANGUAGE_EN_ACTIVE 1
 #define LANGUAGE_DE_ACTIVE 0
 #define LANGUAGE_NL_ACTIVE 0
 #define LANGUAGE_PT_ACTIVE 0
@@ -523,8 +524,8 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define LANGUAGE_CZ_ACTIVE 1
 #define LANGUAGE_PL_ACTIVE 0
 #define LANGUAGE_TR_ACTIVE 0
-#define UI_PRINTER_NAME "RepRap"
-#define UI_PRINTER_COMPANY "pichrt.info"
+#define UI_PRINTER_NAME "Rebelix MK2-X"
+#define UI_PRINTER_COMPANY "hipik634"
 #define UI_PAGES_DURATION 4000
 #define UI_ANIMATION 1
 #define UI_SPEEDDEPENDENT_POSITIONING 0
@@ -539,7 +540,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define UI_KEY_MIN_REPEAT 50
 #define FEATURE_BEEPER 0
 #define CASE_LIGHTS_PIN HEATER_3_PIN
-#define CASE_LIGHT_DEFAULT_ON 0
+#define CASE_LIGHT_DEFAULT_ON 1
 #define UI_START_SCREEN_DELAY 1000
 #define UI_DYNAMIC_ENCODER_SPEED 1
         /**
@@ -550,14 +551,14 @@ Values must be in range 1..255
 */
 #define BEEPER_SHORT_SEQUENCE 2,2
 #define BEEPER_LONG_SEQUENCE 8,8
-#define UI_SET_PRESET_HEATED_BED_TEMP_PLA 0
-#define UI_SET_PRESET_EXTRUDER_TEMP_PLA   195
+#define UI_SET_PRESET_HEATED_BED_TEMP_PLA 60
+#define UI_SET_PRESET_EXTRUDER_TEMP_PLA   220
 #define UI_SET_PRESET_HEATED_BED_TEMP_ABS 90
 #define UI_SET_PRESET_EXTRUDER_TEMP_ABS   225
 #define UI_SET_MIN_HEATED_BED_TEMP  30
 #define UI_SET_MAX_HEATED_BED_TEMP 115
 #define UI_SET_MIN_EXTRUDER_TEMP   170
-#define UI_SET_MAX_EXTRUDER_TEMP   248
+#define UI_SET_MAX_EXTRUDER_TEMP   260
 #define UI_SET_EXTRUDER_FEEDRATE 2
 #define UI_SET_EXTRUDER_RETRACT_DISTANCE 3
 
