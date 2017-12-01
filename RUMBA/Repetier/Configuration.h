@@ -36,7 +36,7 @@
 
 */
 
-#define NUM_EXTRUDER 2
+#define NUM_EXTRUDER 1
 #define MOTHERBOARD 80
 #include "pins.h"
 
@@ -79,8 +79,9 @@
 #define EXT0_X_OFFSET 0
 #define EXT0_Y_OFFSET 0
 #define EXT0_Z_OFFSET 0
-#define EXT0_STEPS_PER_MM 850
-#define EXT0_TEMPSENSOR_TYPE 14
+#define EXT0_STEPS_PER_MM 280
+//#define EXT0_TEMPSENSOR_TYPE 8 //e3d v6
+#define EXT0_TEMPSENSOR_TYPE 14 //rebelix generic 100k ntc 3950
 #define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
 #define EXT0_HEATER_PIN HEATER_0_PIN
 #define EXT0_STEP_PIN ORIG_E0_STEP_PIN
@@ -117,10 +118,11 @@
 #define EXT0_JAM_PIN -1
 #define EXT0_JAM_PULLUP 0
 
-#define EXT1_X_OFFSET 20
+/*
+#define EXT1_X_OFFSET 0
 #define EXT1_Y_OFFSET 0
 #define EXT1_Z_OFFSET 0
-#define EXT1_STEPS_PER_MM 850
+#define EXT1_STEPS_PER_MM 280
 #define EXT1_TEMPSENSOR_TYPE 14
 #define EXT1_TEMPSENSOR_PIN TEMP_2_PIN
 #define EXT1_HEATER_PIN HEATER_2_PIN
@@ -157,7 +159,7 @@
 #define EXT1_DECOUPLE_TEST_PERIOD 12000
 #define EXT1_JAM_PIN -1
 #define EXT1_JAM_PULLUP 0
- 
+ */
 #define FEATURE_RETRACTION 1
 #define AUTORETRACT_ENABLED 0
 #define RETRACTION_LENGTH 3
@@ -169,7 +171,7 @@
 #define RETRACTION_UNDO_SPEED 20
 #define FILAMENTCHANGE_X_POS 0
 #define FILAMENTCHANGE_Y_POS 0
-#define FILAMENTCHANGE_Z_ADD  2
+#define FILAMENTCHANGE_Z_ADD  10
 #define FILAMENTCHANGE_REHOME 1
 #define FILAMENTCHANGE_SHORTRETRACT 5
 #define FILAMENTCHANGE_LONGRETRACT 50
@@ -313,7 +315,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Z_ENABLE_ON 0
 #define DISABLE_X 0
 #define DISABLE_Y 0
-#define DISABLE_Z 1
+#define DISABLE_Z 0
 #define DISABLE_E 0
 #define INVERT_X_DIR 0
 #define INVERT_Y_DIR 1
@@ -321,8 +323,8 @@ It also can add a delay to wait for spindle to run on full speed.
 #define X_HOME_DIR -1
 #define Y_HOME_DIR -1
 #define Z_HOME_DIR -1
-#define X_MAX_LENGTH 190
-#define Y_MAX_LENGTH 190
+#define X_MAX_LENGTH 210
+#define Y_MAX_LENGTH 210
 #define Z_MAX_LENGTH 285
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
@@ -345,7 +347,7 @@ It also can add a delay to wait for spindle to run on full speed.
 // ##########################################################################################
 
 #define FEATURE_BABYSTEPPING 1
-#define BABYSTEP_MULTIPLICATOR 80
+#define BABYSTEP_MULTIPLICATOR 8
 
 #define DELTA_SEGMENTS_PER_SECOND_PRINT 180 // Move accurate setting for print moves
 #define DELTA_SEGMENTS_PER_SECOND_MOVE 70 // Less accurate setting for other moves
@@ -1336,3 +1338,4 @@ Values must be in range 1..255
 ========== End configuration string ==========
 
 */
+
